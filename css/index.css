@@ -1,0 +1,21 @@
+body{
+	background: url('../img/index_bg.jpg');
+}
+
+li {
+    list-style-type: none; /* Убираем маркеры */
+   }
+
+p1{
+		font-size: 140px;
+	}
+   
+.section-inner-wrapper-cv{
+	font-family: "Agency FB";
+	
+}	
+
+.section-inner-wrapper-blog{
+	font-family: "Cuprum";
+	color: #FFFFFF;
+}
