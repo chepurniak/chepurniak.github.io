@@ -1,21 +1,119 @@
-body{
-	background: url('../img/index_bg.jpg');
+@import normalize.css;
+
+	
+.section-header{
+	background: url('../img/index_bg.jpg') no-repeat 50% 50%;
+	background-size: cover;
+	position: relative;
+	height: 100vh;
 }
 
-li {
-    list-style-type: none; /* Убираем маркеры */
-   }
+.section-header::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, .3);
+}
 
-p1{
-		font-size: 140px;
-	}
-   
+.section-inner-wrapper{
+	width: 1140px; 
+	height: 100vh;	
+	display: flex;
+	margin: 0 390px;
+}
+
+/* cv */ 
 .section-inner-wrapper-cv{
-	font-family: "Agency FB";
+	background-color: rgba(183, 209, 255, .5);
+	width: 500px; 
+	height: 100vh;
+}
 	
+.section-inner-wrapper-cv__title{
+	font-family: "Agency FB";
+	font-size: 140px;
+	font-weight: bold;
+	color: #4D4D4D;
+	text-align: left;
+	margin: 130px 50px;
+}
+
+.section-inner-wrapper-cv__list-item1,
+.section-inner-wrapper-cv__list-item2,
+.section-inner-wrapper-cv__list-item3,
+.section-inner-wrapper-cv__list-item4{
+	background-color: rgba(255, 255, 255, .5);
+	width: 400px; 
+	height: 80px;
+	margin: 40px 50px;
+}
+
+p.cv_items{
+	font-family: "Agency FB";
+	font-size: 40px;
+	text-align: left;
+	vertical-align: middle;
+	color: #4D4D4D;
+	margin: 0;
+	padding: 20px 20px;
+}
+/* / cv */ 
+
+/* languages */
+.section-inner-wrapper-languages{
+	height: 25px;
+	width: 140px;
+	display: flex;	
 }	
 
+.section-inner-wrapper-languages__item1,
+.section-inner-wrapper-languages__item2,
+.section-inner-wrapper-languages__item3{
+	height: 25px;
+	width: 25px;
+}	
+/* / languages */
+
+/* blog */ 
 .section-inner-wrapper-blog{
-	font-family: "Cuprum";
-	color: #FFFFFF;
+	background-color: rgba(255, 179, 18, .5);
+	width: 500px; 
+	height: 100vh;
 }
+
+.section-inner-wrapper-blog__title{
+	font-family: "Cuprum";
+	font-size: 140px;
+	color: #FFFFFF;
+	text-align: right;
+	margin: 130px 50px;
+}
+
+.section-inner-wrapper-blog__pictures-1-2,
+.section-inner-wrapper-blog__pictures-3-4{
+	display: flex;
+}
+
+.section-inner-wrapper-blog__pictures-item1,
+.section-inner-wrapper-blog__pictures-item2,
+.section-inner-wrapper-blog__pictures-item3,
+.section-inner-wrapper-blog__pictures-item4{
+	border: 5px solid #FFFFFF;
+	margin: 30px;
+}
+
+img.blog_items{
+	width: 190px; 
+	height: 190px;
+}	
+/* / blog */ 
+
+
+
+
+
+
+
