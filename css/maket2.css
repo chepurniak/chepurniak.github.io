@@ -438,5 +438,14 @@ footer{
     -ms-align-items: center;
     align-items: center;
   }
+  .conditions__item {
+    width: 600px;
+  }
+  .conditions__item_text {
+    font-size: 18px;
+  }
+  .conditions__item_text_center{
+    padding-top: 10px;
+  }
 
 }

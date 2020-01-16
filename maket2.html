@@ -5,20 +5,23 @@
 	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
 	<head>
 		<!-- Заголовок страницы в браузере -->
-		<title></title>
+		<link rel="shortcut icon" href="img/icons/title.png" type="image/png">
+		<title> MANSARDA</title>
 		<!-- Подключаем CSS -->
-		<link rel="stylesheet" href="css/maket2.css" />
+		<link rel="stylesheet" href="css/style.css" />
 		<!-- Подключаем Шрифт -->
 		<link href="https://fonts.googleapis.com/css?family=Jura&display=swap&subset=cyrillic" rel="stylesheet">
 		<!-- Кодировка страницы -->
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<!-- Скрипты -->
+		<script src="js/script.js"></script>
 	</head>
 	<!-- Отображаемое тело страницы -->
 	<body>
 		<div class="wrapper">
 
 			<div class="home">
-				<div class="home__title"> Mansadra </div>
+				<div class="home__title"> Mansarda </div>
 				<div class="content">
 					<div class="home__flex">
 						<div class="home__form">
@@ -84,7 +87,7 @@
 				<div class="content">
 					<div class="consultation__title">Безкоштовна консультація</div>
 					<div class="consultation__text">Щоб дізнатися орієнтовну ціну вашої квартири, інформацію про документи, або відповіді на будь-які запитання — залишайте заявку</div>
-					<button class="consultation__button" type="button">Заявка</button>
+					<button class="consultation__button" onclick="scrollup();" type="button">Заявка</button>
 					</div>
 				</div>
 			</div>
