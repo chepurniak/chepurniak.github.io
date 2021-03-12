@@ -157,7 +157,7 @@ body {
 /*---/Navigation---*/
 /*---Home---*/
 .home {
-  background: url("../../img/home_bg.jpg") center center/cover no-repeat;
+  background: url("../img/home_bg.jpg") center center/cover no-repeat;
   position: relative; }
   .home__wrapper {
     width: 100vw;
@@ -205,10 +205,10 @@ body {
 /*---/Home---*/
 /*---About--*/
 .about-monument {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(86, 100, 114, 0.9)), to(#3b3c3e)), url("../../img/about-monument-bg.png") center 70%/cover no-repeat;
-  background: -webkit-linear-gradient(bottom, rgba(86, 100, 114, 0.9) 0%, #3b3c3e 100%), url("../../img/about-monument-bg.png") center 70%/cover no-repeat;
-  background: -o-linear-gradient(bottom, rgba(86, 100, 114, 0.9) 0%, #3b3c3e 100%), url("../../img/about-monument-bg.png") center 70%/cover no-repeat;
-  background: linear-gradient(0deg, rgba(86, 100, 114, 0.9) 0%, #3b3c3e 100%), url("../../img/about-monument-bg.png") center 70%/cover no-repeat; }
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(86, 100, 114, 0.9)), to(#3b3c3e)), url("../img/about-monument-bg.png") center 70%/cover no-repeat;
+  background: -webkit-linear-gradient(bottom, rgba(86, 100, 114, 0.9) 0%, #3b3c3e 100%), url("../img/about-monument-bg.png") center 70%/cover no-repeat;
+  background: -o-linear-gradient(bottom, rgba(86, 100, 114, 0.9) 0%, #3b3c3e 100%), url("../img/about-monument-bg.png") center 70%/cover no-repeat;
+  background: linear-gradient(0deg, rgba(86, 100, 114, 0.9) 0%, #3b3c3e 100%), url("../img/about-monument-bg.png") center 70%/cover no-repeat; }
 
 .about {
   margin-bottom: 100px; }
@@ -665,7 +665,7 @@ footer {
     left: 50%;
     height: 36px;
     width: 340px;
-    background: url("../../img/nav_line.png") center center/cover no-repeat; }
+    background: url("../img/nav_line.png") center center/cover no-repeat; }
 
 .triangle {
   width: 0;
