@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
     <title>Гранитные памятники</title>
 </head>
 
@@ -14,11 +14,12 @@
         <div class="navbar">
             <nav>
                 <ul class="navbar__menu">
-                    <li><a class="navbar__active-section" href="#">Главная</a></li>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Гранит</a></li>
-                    <li><a href="#">Стоимость</a></li>
-                    <li><a href="#">Контакт</a></li>
+                    <li><a data-goto=".home" class="navbar__link_home navbar__link" href="#">Главная</a></li>
+                    <li><a data-goto=".about" class="navbar__link_about navbar__link" href="#">О нас</a></li>
+                    <li><a data-goto=".granite" class="navbar__link_granite navbar__link" href="#">Гранит</a></li>
+                    <li><a data-goto=".calculator" class="navbar__link_calculator navbar__link" href="#">Стоимость</a>
+                    </li>
+                    <li><a data-goto=".contacts" class="navbar__link_contacts navbar__link" href="#">Контакт</a></li>
                 </ul>
                 <div class="navbar__img">
                     <img src="img/nav_line.png" alt="navLine">
@@ -33,7 +34,7 @@
                     ГРАНИТНЫХ ПАМЯТНИКОВ
                     ИЗ УКРАИНЫ НА ЗАКАЗ
                 </div>
-                <button class="home__btn">Узнайте больше</button>
+                <button data-goto=".about" class="home__btn">Узнайте больше</button>
             </div>
             <div class="triangle triangle_home"></div>
         </div>
@@ -49,52 +50,72 @@
                                 <div class="about__item-logo">
                                     <img src="img/about-item-logo1.png" alt="about item logo 1">
                                 </div>
+                                <div class="about__item-title">Качественный гранит</div>
+                                <div class="about__item-text">Мы работает только с украинским гранитом. При внимательном
+                                    рассмотрении, этот выбор становится очевидным. Украинский гранит по своему качеству
+                                    является одним из лучших в Европе и мире. Покупателям предоставляется возможность
+                                    приобрести материал в разных цветах и оттенках.</div>
+                            </div>
+                        </div>
+                        <div class="about__item-wrapper">
+                            <div class="about__item">
+                                <div class="about__item-logo">
+                                    <img src="img/about-item-logo2.png" alt="about item logo 1">
+                                </div>
+                                <div class="about__item-title">Лучшие месторождения</div>
+                                <div class="about__item-text">У нас есть доступ к большому количеству месторождений в
+                                    Украине в сочетании с
+                                    передовыми технологиями обработки камня, высокопрофессиональными мастерами,
+                                    невысокими ценами и удобной логистикой, позволяет получить отличное изделие в
+                                    короткие сроки за минимальную цену.</div>
+                            </div>
+                        </div>
+                        <div class="about__item-wrapper">
+                            <div class="about__item">
+                                <div class="about__item-logo">
+                                    <img src="img/about-item-logo3.png" alt="about item logo 1">
+                                </div>
+                                <div class="about__item-title">Цена</div>
+                                <div class="about__item-text">Наш сайт поможет Вам в течении 1 минуты определиться с
+                                    эскизом и ценой. Это нужно сделать хотя бы для того, чтобы понять, что именно Вам
+                                    нужно и на какой бюджет можно рассчитывать. Для этого достаточно просто перейти в
+                                    раздел !калькулятор. Еще раз: 1 минута Вашего времени
+                                    даст Вам понимание о порядке цен на подобную продукцию.</div>
+                            </div>
+                        </div>
+                        <div class="about__item-wrapper">
+                            <div class="about__item">
+                                <div class="about__item-logo">
+                                    <img src="img/about-item-logo4.png" alt="about item logo 1">
+                                </div>
                                 <div class="about__item-title">Собственное производство</div>
                                 <div class="about__item-text">Получите тот результат, который вы хотите видеть.
-                                    Благодаря
-                                    собственному производству вы получите выполненный комплекс работ от составления
-                                    эскиза
-                                    до
-                                    установки памятника на месте захоронения.</div>
-                            </div>
-                        </div>
-                        <div class="about__item-wrapper">
-                            <div class="about__item">
-                                <div class="about__item-logo">
-                                    <img src="img/about-item-logo1.png" alt="about item logo 1">
-                                </div>
-                                <div class="about__item-title">Собственное производство</div>
-                                <div class="about__item-text">Lorem Ipsum has been the
-                                    industry's standard dummy text ever since the 1500s, when an unknown</div>
-                            </div>
-                        </div>
-                        <div class="about__item-wrapper">
-                            <div class="about__item">
-                                <div class="about__item-logo">
-                                    <img src="img/about-item-logo1.png" alt="about item logo 1">
-                                </div>
-                                <div class="about__item-title">Собственное производство</div>
-                                <div class="about__item-text">Lorem Ipsum has been the
-                                    industry's standard dummy text ever since the 1500s, when an unknown</div>
-                            </div>
-                        </div>
-                        <div class="about__item-wrapper">
-                            <div class="about__item">
-                                <div class="about__item-logo">
-                                    <img src="img/about-item-logo1.png" alt="about item logo 1">
-                                </div>
-                                <div class="about__item-title">Собственное производство</div>
-                                <div class="about__item-text">Lorem Ipsum has been the
-                                    industry's standard dummy text ever since the 1500s, when an unknown</div>
+                                    Благодаря собственному производству вы получите выполненный комплекс работ от
+                                    составления эскиза до установки памятника на месте захоронения.</div>
                             </div>
                         </div>
                     </div>
                     <div class="about__text">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley ofL
-                        orem
-                        Ipsum is simply dummy text of the printing and typesetting industry.
+                        Как сделать заказ на памятник на нашем сайте. Сделать заказ на нашем сайте достаточно просто.
+                        Необходимо войти в раздел "калькулятор", заполнить все обязательные поля, при этом под эскизом
+                        памятника Вы увидите итоговую сумму заказа, нажать на кнопку "заказать", заполнить все
+                        необходимые поля и нажать на кнопку "отправить". В течении короткого времени с Вами свяжется наш
+                        оператор, который ответит на Ваши дополнительные вопросы и сообщит об условиях частичной оплаты.
+                        <br>
+                        Важно:
+                        <br>
+                        1. Вы будете делать только частичную предоплату. Окончательная оплата будет происходить при
+                        передаче памятника.
+                        <br>
+                        2. Вы будете контролировать процесс производства памятника - Вам будут предоставлены фото
+                        памятника с надписью, чтобы Вы убедились в полном соответствии надписи с Вашим заказом.
+                        <br>
+                        3. В стоимость, рассчитанную в "калькуляторе" ВХОДИТ: Изготовление памятника, нанесение
+                        минимально необходимого текста (даты рождения и смерти, имя и фамилия), доставка в Ваш город по
+                        указанному Вами в заказе адресу.
+                        <br>
+                        4. В стоимость заказа НЕ ВХОДЯТ, и могут оплачиваться отдельно: дополнительные надписи или
+                        изображения, снятие памятника с машины в точке выгрузки, монтаж памятника.
                     </div>
                 </div>
             </div>
@@ -313,6 +334,7 @@
             <div class="container">© 2020 Название Компании</div>
         </footer>
 
+        <script src="js/script.js"></script>
 
 </body>
 
