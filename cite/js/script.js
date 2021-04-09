@@ -30,7 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     //hide line in nav and blur menu bg
     const navImg = document.querySelector('.navbar__img');
-    const navMenu = document.querySelector('.navbar__menu');
+    const navMenu = document.querySelector('nav');
 
     window.addEventListener('scroll', (e) => {
         if (window.pageYOffset >= 60) {
@@ -90,4 +90,59 @@ window.addEventListener('DOMContentLoaded', () => {
             contactsLink.classList.remove('navbar__active-link');
         }
     });
+
+    //about to calculator
+    const toCalc = document.querySelector('.about__link-to-calc');
+    toCalc.addEventListener('click', e => {
+        window.scrollTo({
+            top: document.querySelector('.calculator').offsetTop - 40,
+            behavior: 'smooth'
+        });
+    })
+
+    // modal windows for granite info
+    const granits = document.querySelectorAll('.granite__img'),
+        modals = document.querySelectorAll('.modal'),
+        modalCloseBtn = document.querySelectorAll('.modal__close');
+
+    function closeModals() {
+        modals.forEach(item => {
+            item.classList.remove('modal_open');
+            document.body.style.overflow = '';
+        });
+    }
+
+    // x
+    modalCloseBtn.forEach(btn => {
+        btn.addEventListener('click', closeModals);
+    });
+
+    modals.forEach(modal => {
+        // close on empty area
+        modal.addEventListener('click', e => {
+            if (e.target.classList.contains('modal__body')) {
+                closeModals();
+            }
+        });
+        //esc
+        document.addEventListener('keydown', e => {
+            if (e.code === 'Escape' && modal.classList.contains('modal_open')) {
+                closeModals();
+            }
+        });
+    });
+
+
+
+    function openModal() {
+        document.body.style.overflow = 'hidden';
+    }
+
+    granits.forEach((item, i) => {
+        item.addEventListener('click', e => {
+            modals[i].classList.add('modal_open');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
 });

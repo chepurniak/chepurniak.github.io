@@ -52,13 +52,12 @@ background: rgba(0, 0, 0, 0.8);
 .navbar{
 	position: fixed;
 	width: 100%;
-	top: 0;
+	top: 0px;
 	left: 0;
 	z-index: 100;
 	&__menu{
 		max-width: 1100px;
 		margin: 0 auto;
-		margin-top: 3px;
 		padding: 10px 2px 5px 2px;
 		display: flex;
 		justify-content: center;
@@ -218,6 +217,20 @@ background: rgba(0, 0, 0, 0.8);
 		margin: 30px auto;
 		text-align: center;
 	}
+	&__link-to-calc{
+		font-weight: bold;
+		color: #f1c40f;
+		cursor: pointer;
+	}
+	&__important{
+		&_title{
+			font-size: 20px;
+			font-weight: bold;
+			border: #f1c40f 2px solid;
+			border-radius: 10px;
+			padding: 2px 2px 2px 4px;
+		}
+	}
 }
 
 .monument{
@@ -234,6 +247,16 @@ background: rgba(0, 0, 0, 0.8);
 /*---Granite---*/
 .granite{
 	background: #566472;
+	&__pretext{
+		display: inline-block;
+		margin: 0 auto;
+		font-size: 20px;
+		font-weight: bold;
+		border: #f1c40f 2px solid;
+		border-radius: 14px;
+		padding: 8px;
+		background: #636976;
+	}
 	&__types{
 		display: flex;
 		flex-wrap: wrap;
@@ -286,6 +309,10 @@ background: rgba(0, 0, 0, 0.8);
 			margin: 30px auto;
 			width: 120px;
 			height: 120px;
+			transition: all 0.5s ease 0s;
+			&:hover{
+				transform: scale(1.15);
+			}
 		}
 		& span{
 			position: absolute;
@@ -585,16 +612,15 @@ footer{
 }
 
 /*---Repeated Elements---*/
-.hidden{
-	transition: all 0.5s ease;
-	opacity: 0;
-	transform: translateY(-150px);
-}
 .blur{
 	background: rgba(255, 255, 255, 0.01); 
   	backdrop-filter: blur(8px);
 	transition: all 0.5s ease;
-	border-radius: 40px;
+}
+.hidden {
+	transition: all 0.5s ease;
+	opacity: 0;
+	transform: translateY(-150px); 
 }
 .section{
 	padding-top: 10px;
@@ -640,6 +666,62 @@ footer{
 	&_about-monument{border-bottom: calc(0.1 * 100vw) solid #566472; }
 	&_granite{border-bottom: calc(0.1 * 100vw) solid #636976; }
 	&_calculator{border-bottom: calc(0.1 * 100vw) solid #566472; }
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+	overflow-y: auto;
+    overflow-x: hidden;
+    background-color: rgba(0,0,0,.6);
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.8s ease 0s;
+	&_open{
+		opacity: 1;
+		visibility: visible;
+	}
+	&__close {
+        position: absolute;
+        top: 8px;
+        right: 14px;
+        font-size: 40px;
+        color: #fff;
+        opacity: .5;
+        font-weight: 700;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+	&__body{
+		min-height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 10px;
+	}
+	&__content {
+		position: relative;
+		border: solid 2px #fff;
+		border-radius: 30px;
+		max-width: 1100px;
+		padding: 20px;
+		background: rgba(40, 40, 40, 0.8); 
+		transition: all 0.8s ease 0s;
+    }
+	&__title{
+		margin-top: 20px;
+		text-align: center;
+		font-weight: bold;
+		font-size: 28px;
+	}
+	&__text{
+		line-height: 30px;
+		margin-top: 40px;
+	}
 }
 /*---/Repeated Elements---*/
 
