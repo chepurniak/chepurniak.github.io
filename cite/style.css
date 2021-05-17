@@ -99,7 +99,8 @@ body {
   width: 100%;
   top: 0px;
   left: 0;
-  z-index: 100; }
+  z-index: 100;
+  height: auto; }
   .navbar__menu {
     max-width: 1100px;
     margin: 0 auto;
@@ -439,6 +440,7 @@ body {
       .calculator__choice-button_active {
         border: 2px solid #02CB00; }
     .calculator__choice-additional-title {
+      overflow: hidden;
       margin-top: 15px;
       height: 28px;
       cursor: pointer; }
@@ -446,16 +448,10 @@ body {
       height: 100%;
       -webkit-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
-      transition: all 0.3s ease; }
+      transition: all 0.3s ease;
+      display: inline-block; }
     .calculator__choice-additional-content {
       margin: 20px 0; }
-    .calculator__choice-additional_active img {
-      -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-      transform: rotate(180deg);
-      -webkit-transition: all 0.3s ease;
-      -o-transition: all 0.3s ease;
-      transition: all 0.3s ease; }
     .calculator__choice-granite-bar {
       margin-top: 20px;
       display: -webkit-box;
@@ -484,7 +480,7 @@ body {
         transition: all 0.3s ease; }
       .calculator__choice-granite-img_active img {
         border-radius: 50%;
-        border: 2px solid #02CB00;
+        border: 3px solid #02CB00;
         -webkit-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
         transition: all 0.3s ease; }
@@ -542,6 +538,7 @@ body {
       .calculator__choice-granite-active-img {
         width: 100%; }
       .calculator__choice-granite-active-title {
+        display: block;
         text-align: center;
         font-size: 14px; }
   .calculator__picture-wrapper {
@@ -686,9 +683,15 @@ footer {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   opacity: 0;
-  -webkit-transform: translateY(-150px);
-  -ms-transform: translateY(-150px);
-  transform: translateY(-150px); }
+  visibility: hidden; }
+
+.dnone {
+  display: none; }
+
+.rotate {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
 
 .section {
   padding-top: 10px; }

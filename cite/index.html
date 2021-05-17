@@ -210,22 +210,25 @@
                                 Стелла
                             </div>
                             <div class="calculator__choice-button-bar">
-                                <button class="calculator__choice-button">Маленькая</button>
-                                <button
+                                <button data-stella="small" class="calculator__choice-button">Маленькая</button>
+                                <button data-stella="big"
                                     class="calculator__choice-button calculator__choice-button_active">Большая</button>
                             </div>
-                            <div class="calculator__choice-additional calculator__choice-additional_active">
+                            <div class="calculator__choice-additional">
                                 <div class="calculator__choice-additional-title">
                                     Дополнительные опции
-                                    <img src="img/additional.png" alt="">
+                                    <img class="arrow-img" src="img/additional.png" alt="">
                                 </div>
-                                <div class="calculator__choice-additional-content">
+                                <div
+                                    class="calculator__choice-additional-content calculator__choice-additional-content_stella dnone">
                                     <div class="addition-1">Форма верха:</div>
                                     <div class="calculator__choice-button-bar">
-                                        <button class="calculator__choice-button">Ровная</button>
-                                        <button
+                                        <button data-stellaAddition="flat"
+                                            class="calculator__choice-button">Ровная</button>
+                                        <button data-stellaAddition="curve"
                                             class="calculator__choice-button calculator__choice-button_active">Кривая</button>
-                                        <button class="calculator__choice-button">Волной</button>
+                                        <button data-stellaAddition="wave"
+                                            class="calculator__choice-button">Волной</button>
                                     </div>
                                 </div>
                             </div>
@@ -236,20 +239,22 @@
                                 Надгробие
                             </div>
                             <div class="calculator__choice-button-bar">
-                                <button
+                                <button data-plate="plate"
                                     class="calculator__choice-button calculator__choice-button_active">Надгробие</button>
                             </div>
-                            <div class="calculator__choice-additional calculator__choice-additional_active">
+                            <div class="calculator__choice-additional">
                                 <div class="calculator__choice-additional-title">
                                     Дополнительные опции
-                                    <img src="img/additional.png" alt="">
+                                    <img class="arrow-img" src="img/additional.png" alt="">
                                 </div>
-                                <div class="calculator__choice-additional-content">
+                                <div
+                                    class="calculator__choice-additional-content calculator__choice-additional-content_plate dnone">
                                     <div class="calculator__choice-button-bar">
-                                        <button class="calculator__choice-button">Цветник</button>
+                                        <button data-plate="flower" class="calculator__choice-button">Цветник</button>
                                     </div>
                                     <div class="calculator__choice-button-bar">
-                                        <button class="calculator__choice-button">Надгробие с цветником</button>
+                                        <button data-plate="plate-flower" class="calculator__choice-button">Надгробие с
+                                            цветником</button>
                                     </div>
                                 </div>
                             </div>
@@ -262,26 +267,31 @@
 
                             <div class="calculator__choice-granite-bar">
                                 <div class="calculator__choice-granite-types">
-                                    <div class="calculator__choice-granite-img calculator__choice-granite-img_active">
+                                    <div data-granite="pokostovsky"
+                                        class="calculator__choice-granite-img calculator__choice-granite-img_active">
                                         <img src="img/granite/Ellipse-1.png" alt="">
                                     </div>
-                                    <div class="calculator__choice-granite-img"><img src="img/granite/Ellipse-2.png"
-                                            alt="">
+                                    <div data-granite="leznikovsky" class="calculator__choice-granite-img">
+                                        <img src="img/granite/Ellipse-2.png" alt="">
                                     </div>
-                                    <div class="calculator__choice-granite-img"><img src="img/granite/Ellipse-3.png"
-                                            alt=""></div>
-                                    <div class="calculator__choice-granite-img"><img src="img/granite/Ellipse-4.png"
-                                            alt="">
+                                    <div data-granite="maslavsky" class="calculator__choice-granite-img">
+                                        <img src="img/granite/Ellipse-3.png" alt="">
                                     </div>
-                                    <div class="calculator__choice-granite-img"><img src="img/granite/Ellipse-5.png"
-                                            alt=""></div>
-                                    <div class="calculator__choice-granite-img"><img src="img/granite/Ellipse-6.png"
-                                            alt="">
+                                    <div data-granite="mezhirichensky" class="calculator__choice-granite-img">
+                                        <img src="img/granite/Ellipse-4.png" alt="">
                                     </div>
-                                    <div class="calculator__choice-granite-img"><img src="img/granite/Ellipse-7.png"
-                                            alt=""></div>
-                                    <div class="calculator__choice-granite-img"><img src="img/granite/Ellipse-8.png"
-                                            alt=""></div>
+                                    <div data-granite="tokovsky" class="calculator__choice-granite-img">
+                                        <img src="img/granite/Ellipse-5.png" alt="">
+                                    </div>
+                                    <div data-granite="kapustinskij" class="calculator__choice-granite-img">
+                                        <img src="img/granite/Ellipse-6.png" alt="">
+                                    </div>
+                                    <div data-granite="labradorite" class="calculator__choice-granite-img">
+                                        <img src="img/granite/Ellipse-7.png" alt="">
+                                    </div>
+                                    <div data-granite="gabbro" class="calculator__choice-granite-img">
+                                        <img src="img/granite/Ellipse-8.png" alt="">
+                                    </div>
                                 </div>
                                 <div class="calculator__choice-granite-active">
                                     <div class="calculator__choice-granite-active"><img
@@ -292,12 +302,13 @@
                                 </div>
                             </div>
 
-                            <div class="calculator__choice-additional calculator__choice-additional_active">
+                            <div class="calculator__choice-additional">
                                 <div class="calculator__choice-additional-title">
                                     Дополнительные опции
-                                    <img src="img/additional.png" alt="">
+                                    <img class="arrow-img" src="img/additional.png" alt="">
                                 </div>
-                                <div class="calculator__choice-additional-content">
+                                <div
+                                    class="calculator__choice-additional-content calculator__choice-additional-content_granite dnone">
                                     Доп опции к граниту
                                 </div>
                             </div>
@@ -328,7 +339,7 @@
                     Commodi, quaerat blanditiis perferendis ipsum distinctio, a iste doloremque eligendi magnam tenetur
                     sed repellat sunt dicta optio rerum.
                 </div>
-                <form class="contacts__form" action="#">
+                <form class="contacts__form" action="mail.php" method="POST">
                     <div class="contacts__form-part">
                         <label class="contacts__form-label" for="name">Имя:</label>
                         <input class="contacts__form-input" required type="text" name="name">

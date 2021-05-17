@@ -1,0 +1,11 @@
+{
+    "kapustinskij": {
+        "stella": {
+            "small": 130,
+            "big": 270
+        },
+        "stand": 85,
+        "plate": 170,
+        "borders": 85
+    }
+}

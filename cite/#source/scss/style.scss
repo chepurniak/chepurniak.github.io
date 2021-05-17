@@ -55,6 +55,7 @@ background: rgba(0, 0, 0, 0.8);
 	top: 0px;
 	left: 0;
 	z-index: 100;
+	height: auto;
 	&__menu{
 		max-width: 1100px;
 		margin: 0 auto;
@@ -383,6 +384,7 @@ background: rgba(0, 0, 0, 0.8);
 		}
 		&-additional{
 			&-title{
+				overflow: hidden;
 				margin-top: 15px;
 				height: 28px;
 				cursor: pointer;
@@ -390,15 +392,10 @@ background: rgba(0, 0, 0, 0.8);
 			& img{
 				height: 100%;
 				transition: all 0.3s ease;
+				display: inline-block;
 			}
 			&-content{
 				margin: 20px 0;
-			}
-			&_active{
-				img{
-					transform: rotate(180deg);
-					transition: all 0.3s ease;
-				}
 			}
 		}
 		&-granite-bar{
@@ -424,7 +421,7 @@ background: rgba(0, 0, 0, 0.8);
 			}
 			&_active img{
 				border-radius: 50%;
-				border: 2px solid #02CB00;
+				border: 3px solid #02CB00;
 				transition: all 0.3s ease;
 			}
 			&:nth-of-type(1){
@@ -475,6 +472,7 @@ background: rgba(0, 0, 0, 0.8);
 				width: 100%;
 			}
 			&-title{
+				display: block;
 				text-align: center;
 				font-size: 14px;
 			}
@@ -620,7 +618,13 @@ footer{
 .hidden {
 	transition: all 0.5s ease;
 	opacity: 0;
-	transform: translateY(-150px); 
+	visibility: hidden;
+}
+.dnone {
+	display: none;
+}
+.rotate {
+	transform: rotate(180deg);
 }
 .section{
 	padding-top: 10px;
